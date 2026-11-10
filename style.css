@@ -59,13 +59,11 @@ body {
   margin: 0 auto 1rem;         /* centered, small gap between pages */
   padding: 0.7in;
   border: 1px solid #ccc;      /* thin line so you can see the page edges */
-  background: FEEBE7
   font-family: 'Gulmarg Nastaleeq', serif;
   font-size: 14pt;
   line-height: 2.4;            /* Nastaliq needs extra line spacing */
   text-align: start;           /* "start" = right side in RTL */
   font-synthesis: none;        /* never let the browser fake bold or italic */
-/*  background: #65B895; */
 }
 
 
@@ -169,7 +167,6 @@ blockquote {
   grid-template-columns: repeat(2, 1fr);  /* 2 equal columns */
   gap: 0.2in;                             /* space between boxes */
   margin-top: 0;
-  /*background: #FFFFFF; /*
 }
 
 .letter {
