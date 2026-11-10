@@ -65,7 +65,7 @@ body {
   line-height: 2.4;            /* Nastaliq needs extra line spacing */
   text-align: start;           /* "start" = right side in RTL */
   font-synthesis: none;        /* never let the browser fake bold or italic */
-  background: #F5B027;
+  background: #65B895;
 }
 
 
@@ -169,7 +169,7 @@ blockquote {
   grid-template-columns: repeat(2, 1fr);  /* 2 equal columns */
   gap: 0.2in;                             /* space between boxes */
   margin-top: 0;
-  backgroun: 0;
+  background: #FFFFFF;
 }
 
 .letter {
