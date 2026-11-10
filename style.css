@@ -59,7 +59,7 @@ body {
   margin: 0 auto 1rem;         /* centered, small gap between pages */
   padding: 0.7in;
   border: 1px solid #5d5e5d;      /* thin line so you can see the page edges */
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(242, 227, 240);
 
   font-family: 'Gulmarg Nastaleeq', serif;
   font-size: 14pt;
@@ -234,6 +234,7 @@ blockquote {
   border-radius: 0.12in;
   font-size: 22pt;
   line-height: 1.6;
+  background-color: #fcb56e;
 }
 
 
@@ -256,6 +257,7 @@ blockquote {
   font-size: 17pt;
   line-height: 1.6;
   padding: 0 0.1in;
+  background-color: rgb(253, 158, 234);
 }
 
 .consonant .num {
