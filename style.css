@@ -169,6 +169,7 @@ blockquote {
   grid-template-columns: repeat(2, 1fr);  /* 2 equal columns */
   gap: 0.2in;                             /* space between boxes */
   margin-top: 0;
+  backgroun: 0;
 }
 
 .letter {
