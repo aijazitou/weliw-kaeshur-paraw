@@ -253,7 +253,7 @@ margin-top: 0;
 
 .consonant {
 display: flex;
-align-items: center;
+align-items: right;
 justify-content: right;
 height: 0.9in;
 border: 1px solid #c8e6c9;
