@@ -267,7 +267,7 @@ box-shadow: 0 1px 3px rgba(0,0,0,0.02);
 gap: 0.4em;
 }
 
-.consonant .num {
+/*.consonant .num {
 display: flex;
 align-items: top;
 justify-content: right;
@@ -275,7 +275,7 @@ height: 1.5in;
 font-size: 10pt;
 line-height: 0.6;
 padding: 0 0.0in 0 0.0in;
-background-color: #e8f5e9;    /* Gentle sage green tint */
+/*background-color: #e8f5e9;    /* Gentle sage green tint */
 /*color: #1b4332;
 gap: 0.4em;
 }
