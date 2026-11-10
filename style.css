@@ -252,6 +252,7 @@ margin-top: 0;
 }
 
 .consonant {
+position: relative;            /* lets .num be placed inside this box */
 display: flex;
 align-items: center;
 justify-content: right;
@@ -268,18 +269,13 @@ gap: 0.4em;
 }
 
 .consonant .num {
-display: flex;
-align-items: flex-start;
-justify-content: right;
-height: 1.5in;
-font-size: 10pt;
-line-height: 0.6;
-padding: 0 0.0in 0 0.0in;
-/*background-color: #e8f5e9;    /* Gentle sage green tint */
-/*color: #1b4332;
-gap: 0.4em;
+  position: absolute;
+  top: 0.05in;                   /* distance from the top edge */
+  right: 0.1in;                  /* distance from the right edge */
+  font-size: 10pt;
+  line-height: 1;
+  color: #5b5780;                /* readable on every tile color */
 }
-
 /* ==========================================================
 9. PHONE SCREENS
 ========================================================== */
