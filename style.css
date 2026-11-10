@@ -59,12 +59,13 @@ body {
   margin: 0 auto 1rem;         /* centered, small gap between pages */
   padding: 0.7in;
   border: 1px solid #ccc;      /* thin line so you can see the page edges */
-
+  background: FEEBE7
   font-family: 'Gulmarg Nastaleeq', serif;
   font-size: 14pt;
   line-height: 2.4;            /* Nastaliq needs extra line spacing */
   text-align: start;           /* "start" = right side in RTL */
   font-synthesis: none;        /* never let the browser fake bold or italic */
+  background: #feebe7;
 }
 
 
