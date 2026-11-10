@@ -58,7 +58,8 @@ body {
   min-height: 9in;             /* grows if the content is long */
   margin: 0 auto 1rem;         /* centered, small gap between pages */
   padding: 0.7in;
-  border: 1px solid #ccc;      /* thin line so you can see the page edges */
+  border: 1px solid #5d5e5d;      /* thin line so you can see the page edges */
+  background-color: rgb(245, 245, 245);
 
   font-family: 'Gulmarg Nastaleeq', serif;
   font-size: 14pt;
@@ -182,6 +183,7 @@ blockquote {
   font-size: 24pt;
   line-height: 1.0;
   padding: 0.2in 0.2in 0 0;               /* top and right gap for the big letter */
+  background-color: rgb(255, 255, 255);
 }
 
 .letter .char {
