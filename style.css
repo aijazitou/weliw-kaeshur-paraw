@@ -252,7 +252,7 @@ margin-top: 0;
 }
 
 .consonant {
-position: relative;            /* lets .num be placed inside this box */
+position: relative !important;            /* lets .num be placed inside this box */
 display: flex;
 align-items: center;
 justify-content: right;
