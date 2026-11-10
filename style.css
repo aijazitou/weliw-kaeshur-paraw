@@ -59,6 +59,7 @@ body {
   margin: 0 auto 1rem;         /* centered, small gap between pages */
   padding: 0.7in;
   border: 1px solid #ccc;      /* thin line so you can see the page edges */
+
   font-family: 'Gulmarg Nastaleeq', serif;
   font-size: 14pt;
   line-height: 2.4;            /* Nastaliq needs extra line spacing */
