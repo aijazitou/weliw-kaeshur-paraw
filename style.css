@@ -42,7 +42,7 @@
 body {
   margin: 0;
   padding: 1rem 0;
-  background: #fbf8f0;
+  
 }
 
 
@@ -60,6 +60,7 @@ body {
   margin: 0 auto 1rem;         /* centered, small gap between pages */
   padding: 0.7in;
   border: 1px solid #ccc;      /* thin line so you can see the page edges */
+  background: #fbf8f0;
 
   font-family: 'Gulmarg Nastaleeq', serif;
   font-size: 14pt;
