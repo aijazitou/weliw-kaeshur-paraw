@@ -65,7 +65,7 @@ body {
   line-height: 2.4;            /* Nastaliq needs extra line spacing */
   text-align: start;           /* "start" = right side in RTL */
   font-synthesis: none;        /* never let the browser fake bold or italic */
-  background: #feebe7;
+  background: #F5B027;
 }
 
 
