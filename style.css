@@ -1,0 +1,348 @@
+/* ==========================================================
+SHARED STYLE FILE FOR THE WHOLE BOOK
+Used by index.html and every section (01-alphabet.html, ...).
+
+Contents
+1. Font
+2. Basic setup
+3. The page
+4. Text elements
+5. Title page
+6. Contents list (index.html)
+7. Letter boxes with pictures (section 1)
+8. All letters grid (section 1)
+9. Phone screens
+10. Printing (7 x 10 inch book)
+========================================================== */
+
+/* ==========================================================
+
+FONT
+========================================================== */
+
+@font-face {
+font-family: 'Gulmarg Nastaleeq';
+src: local('Gulmarg Nastaleeq'),
+url('fonts/GulmargNastaleeq.ttf') format('truetype');
+}
+
+/* ==========================================================
+2. BASIC SETUP (screen)
+========================================================== */
+
+{
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+padding: 1.5rem 0;
+background: #f4f1ea;         /* Warm desk / background tone */
+}
+
+/* ==========================================================
+3. THE PAGE
+========================================================== */
+
+.page {
+width: 7in;
+max-width: 100%;
+min-height: 9in;
+margin: 0 auto 1.5rem;
+padding: 0.7in;
+background: #fafaf8;         /* Soft warm paper color */
+box-shadow: 0 4px 15px rgba(44, 30, 20, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05);
+border: 1px solid #e8e4db;
+border-radius: 4px;
+
+font-family: 'Gulmarg Nastaleeq', serif;
+font-size: 14pt;
+line-height: 2.4;
+color: #2b2b2b;              /* Dark charcoal for better readability than harsh black */
+text-align: start;
+font-synthesis: none;
+}
+
+/* ==========================================================
+4. TEXT ELEMENTS
+========================================================== */
+
+h1 {
+font-size: 46pt;
+font-weight: normal;
+margin: 0 0 0.5em;
+text-align: center;
+color: #1b4332;              /* Deep emerald green */
+}
+
+h2 {
+font-size: 20pt;
+font-weight: normal;
+margin: 0 0 0.8em;
+text-align: center;
+color: #2d6a4f;              /* Soft dark green */
+border-bottom: 2px dashed #d8f3dc;
+padding-bottom: 0.3em;
+}
+
+h3 {
+font-size: 16pt;
+font-weight: normal;
+margin: 1.2em 0 0.4em;
+color: #c05c19;              /* Warm terracotta accents */
+}
+
+p {
+margin: 0 0 0.8em;
+text-indent: 1.5em;
+}
+
+ul {
+margin: 0 0 1em;
+padding-inline-start: 1.5em;
+}
+
+blockquote {
+margin: 1.2em 1em;
+padding-inline-start: 1em;
+border-inline-start: 4px solid #b8860b;   /* Muted gold line */
+font-size: 13pt;
+color: #4a3b32;
+background: #faf6ed;
+padding: 0.5em 1em;
+border-radius: 0 8px 8px 0;
+}
+
+/* ==========================================================
+5. TITLE PAGE
+========================================================== */
+
+.title-page {
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+background: linear-gradient(135deg, #ffffff 0%, #fdfbf7 100%);
+}
+
+.author {
+font-size: 16pt;
+text-indent: 0;
+color: #52796f;
+}
+
+/* ==========================================================
+6. CONTENTS LIST (index.html)
+========================================================== */
+
+.contents {
+list-style: none;
+margin: 0.5in 0 0;
+padding: 0;
+}
+
+.contents li {
+margin: 0 0 0.3in;
+}
+
+.contents a {
+display: block;
+padding: 0.2in 0.3in;
+border: 1px solid #d8e2dc;
+border-radius: 0.15in;
+color: #1b4332;
+text-decoration: none;
+background: #ffffff;
+box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+transition: all 0.2s ease;
+}
+
+.contents a:hover {
+background: #e8f5e9;         /* Mint tint on hover */
+border-color: #74c69d;
+transform: translateY(-1px);
+}
+
+/* ==========================================================
+7. LETTER BOXES WITH PICTURES (section 1)
+========================================================== */
+
+.letters {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 0.2in;
+margin-top: 0;
+}
+
+.letter {
+position: relative;
+overflow: hidden;
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+height: 2.0in;
+border: 1px solid #e0d7c6;
+font-size: 24pt;
+line-height: 1.0;
+border-radius: 0.15in;
+padding: 0.2in 0.2in 0 0;
+background-color: #ffffff;
+box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+}
+
+.letter .char {
+position: relative;
+z-index: 1;
+color: #1b4332;
+font-weight: bold;
+}
+
+.letter img {
+position: absolute;
+top: 0.25in;
+right: 0.25in;
+bottom: 0.25in;
+left: 0.25in;
+width: calc(100% - 0.5in);
+height: calc(100% - 0.5in);
+object-fit: contain;
+}
+
+.letter .word {
+position: absolute;
+bottom: 0.12in;
+left: 0.15in;
+z-index: 1;
+font-size: 13pt;
+line-height: 1.6;
+color: #c05c19;              /* Warm terracotta color */
+font-weight: 500;
+}
+
+/* ==========================================================
+8. ALL LETTERS & CONSONANTS GRIDS
+========================================================== */
+
+.allletters {
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+gap: 0.08in;
+margin-top: 0;
+}
+
+.allletter {
+display: flex;
+align-items: center;
+justify-content: center;
+height: 0.75in;
+border: 1px solid #f3e5ab;
+border-radius: 0.12in;
+font-size: 22pt;
+line-height: 1.6;
+background-color: #fff9e6;    /* Soft warm cream tint */
+color: #2c3e50;
+box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+
+.consonants {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 0.10in;
+margin-top: 0;
+}
+
+.consonant {
+display: flex;
+align-items: center;
+justify-content: right;
+height: 0.9in;
+border: 1px solid #c8e6c9;
+border-radius: 0.15in;
+font-size: 17pt;
+line-height: 1.6;
+padding: 0 0.1in 0 0.1in;
+background-color: #e8f5e9;    /* Gentle sage green tint */
+color: #1b4332;
+box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+gap: 0.4em;
+}
+
+.consonant .num {
+display: flex;
+align-items: top;
+justify-content: right;
+height: 0.9in;
+font-size: 17pt;
+line-height: 1.6;
+padding: 0 0.1in 0 0.1in;
+background-color: #e8f5e9;    /* Gentle sage green tint */
+color: #1b4332;
+gap: 0.4em;
+}
+
+/* ==========================================================
+9. PHONE SCREENS
+========================================================== */
+
+@media (max-width: 600px) {
+body {
+padding: 0;
+background: #ffffff;
+}
+
+.page {
+margin: 0;
+padding: 1.0rem;
+min-height: 0;
+box-shadow: none;
+border: none;
+border-bottom: 1px solid #eee;
+font-size: 13pt;
+}
+
+h1 { font-size: 28pt; }
+h2 { font-size: 18pt; }
+
+.letter {
+font-size: 20pt;
+}
+
+.allletter {
+font-size: 18pt;
+}
+}
+
+/* ==========================================================
+10. PRINTING (7 x 10 inch book)
+========================================================== */
+
+@page {
+size: 7in 10in;
+margin: 0.5in 0;
+}
+
+@media print {
+body {
+padding: 0;
+background: none;
+}
+
+.page {
+width: 7in;
+height: 9in;
+min-height: 0;
+margin: 0;
+padding: 0.7in;
+box-shadow: none;
+border: none;
+background: white;
+overflow: hidden;
+break-after: page;
+page-break-after: always;
+}
+
+.page:last-child {
+break-after: auto;
+page-break-after: auto;
+}
+}
