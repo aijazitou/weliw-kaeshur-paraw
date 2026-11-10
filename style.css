@@ -260,7 +260,7 @@ border: 1px solid #c8e6c9;
 border-radius: 0.15in;
 font-size: 16pt;
 line-height: 0.6;
-padding: 0.5in 0.1in 0 0.0in;
+padding: 1.5in 0.1in 0 0.0in;
 background-color: #e8f5e9;    /* Gentle sage green tint */
 color: #1b4332;
 box-shadow: 0 1px 3px rgba(0,0,0,0.02);
@@ -274,7 +274,7 @@ justify-content: right;
 height: 1.5in;
 font-size: 10pt;
 line-height: 0.6;
-padding: 0 0.1in 0 0.0in;
+padding: 0 0.0in 0 0.0in;
 /*background-color: #e8f5e9;    /* Gentle sage green tint */
 /*color: #1b4332;
 gap: 0.4em;
